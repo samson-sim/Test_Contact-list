@@ -1,27 +1,20 @@
+import { Route, Switch } from 'react-router-dom';
 import React from 'react';
 import './App.scss';
+import { ContactInfo } from './components/ContactInfo/ContactInfo';
+import { PeoplePage } from './components/ContactsPage/ContactsPage';
 
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
-
-export const App: React.FC = () => {
+const App = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
+    <>
+      <Switch>
+        <Route path="/" exact>
+          <PeoplePage />
+        </Route>
+        <Route path="/:id" component={ContactInfo} />
+      </Switch>
+    </>
   );
 };
+
+export default App;

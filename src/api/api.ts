@@ -1,0 +1,35 @@
+export const contactsApi: any[] = [{
+  id: 1,
+  name: 'Alla Malvina',
+  username: 'Samantha',
+  email: 'Nathan@yesenia.net',
+  phone: '1-463-123-4447',
+},
+{
+  id: 2,
+  name: 'Samson Sim',
+  username: 'Samantha',
+  email: 'Nathan@yesenia.net',
+  phone: '1-463-123-4447',
+},
+{
+  id: 3,
+  name: 'Sasha Bauch',
+  username: 'Samantha',
+  email: 'Nathan@yesenia.net',
+  phone: '1-463-123-4447',
+},
+{
+  id: 4,
+  name: 'Clementine Bauch',
+  username: 'Samantha',
+  email: 'Nathan@yesenia.net',
+  phone: '1-463-123-4447',
+},
+{
+  id: 5,
+  name: 'Igor Loger',
+  username: 'Samantha',
+  email: 'Nathan@yesenia.net',
+  phone: '1-463-123-4447',
+}];

@@ -1,0 +1,54 @@
+html {
+  font-size: 20px;
+}
+
+.contact {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__link {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(50, 102, 155);
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-size: inherit;
+    min-width: 100px;
+
+    &:hover {
+      background-color: #645bb8;
+    }
+  }
+
+  &__delete {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #922e37;
+    border: 0;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-size: inherit;
+    min-width: 100px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ee1111;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px
+  }
+}
